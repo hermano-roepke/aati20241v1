@@ -1,100 +1,173 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Matheus Neumann</title>                  
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Neumann</title>
+    <style>
+        body {
+            background-color: #FFFF00;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header, footer {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #007BFF;
+            margin: 0;
+        }
+        h2, h3 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        figure {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        figcaption {
+            font-style: italic;
+            margin-top: 5px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .content {
+            margin: 20px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
 
-        <meta charset="UTF-8">
-        <style>
-            body{
-                background-color: #FFFF00
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header, footer {
+                padding: 15px;
             }
-        </style>
-    </head>
-    <body>
+            .container {
+                padding: 10px;
+            }
+            img {
+                max-width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            h3 {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
         <h1>Matheus Gabriel dos Santos Neumann</h1>
-        <ul>
-            <h2>Bem-vindo ao meu memorial</h2>
-            <h3>Descrição:
+    </header>
+
+    <div class="container">
+        <main class="content">
+            <section>
+                <h2>Bem-vindo ao meu memorial</h2>
+                
+                <h3>Descrição:</h3>
                 <ul>
-                    <li>Nome:Matheus Gabriel dos Santos Neumann.</li>
-                    <li>idade:15 anos.</li>
-                    <li>nascido em 31/10/2008</li>
-                    <li>Moro em Rio dos Cedros /SC.</li>
-                    <li>Sou natural de Timbó/SC, mais moro em Rio dos Cedros, com minha mãe meu padrasto e minha irmão. </li>
+                    <li>Nome: Matheus Gabriel dos Santos Neumann.</li>
+                    <li>Idade: 15 anos.</li>
+                    <li>Nascido em: 31/10/2008.</li>
+                    <li>Moro em: Rio dos Cedros / SC.</li>
+                    <li>Sou natural de Timbó / SC, mas moro em Rio dos Cedros com minha mãe, meu padrasto e minha irmã.</li>
                 </ul>
+            </section>
+            
+            <section>
                 <h3>Hobbies:</h3>
                 <ul>
-                    <li>Eu treino futsal. </li>
-                    <li>Nome do time que joga "MAESTROS DO FUTSAL FC"</li>       
-                    <li>Estou Namorando.</li>
-                    <li>serie que estou assistindo ou já assisti: Manifest, The Last Kingdom, BROOKLYN NINE-NINE.</li>
-                    <li>Profissão que desejo frequentar no futuro: Professor de informatica.</li>
-                    <li>meu time e o Santos e sim eu gosto de sofre kkk.</li>
-                    <figure>
-                        <img src="img/matheusn.santos.webp"height="200px"
-                             width="200pk"alt="dodge challenge">
-                    </figure> 
+                    <li>Eu treino futsal.</li>
+                    <li>Nome do time que jogo: "MAESTROS DO FUTSAL FC".</li>
+                    <li>Estou namorando.</li>
+                    <li>Séries que estou assistindo ou já assisti: Manifest, The Last Kingdom, Brooklyn Nine-Nine.</li>
+                    <li>Profissão que desejo seguir no futuro: Professor de Informática.</li>
+                    <li>Meu time é o Santos e sim, eu gosto de sofrer! Kkk.</li>
                 </ul>
-                <h3>carros Que desejo ter no futuro:
-                    <ul>
-                        <figure>                                                             
-                            <img src="img/matheusn.MY23Challenger_.avif" height="400px"			
-                                 width="550pk"alt="dodge challenge">										
-                            <figcaption>dedge challenge 2023</figcaption>							
-                        </figure>															 
-                    </ul>
-                    <figure>                                                             
-                        <img src="img/matheusndodge _ram.webp" height="400px"			
-                             width="550pk"alt="dodge Ram 2">										
-                        <figcaption>dedge Ram 2500</figcaption>							
-                    </figure>	
-                    <ul>
-                        <h3>Momentos:</h3>
-                    </ul>
-                    <figure>                                                            
-                        <img src="img/matheusn_Eu.jpg" height="400px"			
-                             width="400pk"alt="E esse sou eu :)">										
-                        <figcaption>E esse sou eu</figcaption>							
-                    </figure>
-                    <ul>
-                        <figure>                                                            
-                            <img src="img/matheusn.MAESTROS FC_jpg" height="500px"			
-                                 width="400pk"alt="MAESTROS">										
-                            <figcaption>Meu time</figcaption>							
-                        </figure>
+                <figure>
+                    <img src="img/matheusn.santos.webp" alt="Matheus Neumann" height="200">
+                    <figcaption>Matheus Neumann</figcaption>
+                </figure>
+            </section>
 
-                        <h3>Lugares que desejo fiajar</h3>
-                        <ul>
-                            <li>Finlandia</li>
-                            <li>França</li>
-                        </ul>
-                        <div
-                            <figure>                                                            
-                                <img src="img/matheusCasa_noell-min.jpg" height="300px"			
-                                     width="500pk"alt="MAESTROS">										
-                                <figcaption>Casa do papai noel</figcaption>							
-                            </figure>
-                        </div
-                    </ul>
-                    <div>
-                        <figure>                                                            
-                            <img src="img/matheusn.torre-eiffel.webp" height="300px"			
-                                 width="500pk"alt="MAESTROS">										
-                            <figcaption>torre eiffel</figcaption>							
-                        </figure>
-                    </div>
-                    <A href="vitoria.html"> </A>
-                    <A href="matheusn.html"> </A>
-                    <A href="luana.html"> </A>
+            <section>
+                <h3>Carros que desejo ter no futuro:</h3>
+                <figure>
+                    <img src="img/matheusn.MY23Challenger_.avif" alt="Dodge Challenger 2023" height="400">
+                    <figcaption>Dodge Challenger 2023</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/matheusndodge_ram.webp" alt="Dodge Ram 2500" height="400">
+                    <figcaption>Dodge Ram 2500</figcaption>
+                </figure>
+            </section>
 
+            <section>
+                <h3>Momentos:</h3>
+                <figure>
+                    <img src="img/matheusn_Eu.jpg" alt="Eu" height="400">
+                    <figcaption>E esse sou eu :)</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/matheusn.MAESTROS FC_jpg" alt="Meu time" height="500">
+                    <figcaption>Meu time</figcaption>
+                </figure>
+            </section>
 
+            <section>
+                <h3>Lugares que desejo visitar:</h3>
+                <ul>
+                    <li>Finlândia</li>
+                    <li>França</li>
+                </ul>
+                <figure>
+                    <img src="img/matheusCasa_noell-min.jpg" alt="Casa do Papai Noel" height="300">
+                    <figcaption>Casa do Papai Noel</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/matheusn.torre-eiffel.webp" alt="Torre Eiffel" height="300">
+                    <figcaption>Torre Eiffel</figcaption>
+                </figure>
+            </section>
+        </main>
 
+        <footer>
+            <p><a href="vitoria.html">Vitória</a> | <a href="abraaos.html">Abraão</a> | <a href="luana.html">Luana</a></p>
+        </footer>
+    </div>
+</body>
+</html>
 
-
-
-                    </p>
-                    </ul>
-                    </ul>
-                    </ul>
-                    </body>
-                    </html>

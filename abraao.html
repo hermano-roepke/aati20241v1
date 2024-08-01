@@ -6,33 +6,88 @@
     <title>Abraão Santos Barros</title>
     <style>
         body {
-            background-color: #00FFFF;
-            font-family: Arial, sans-serif;
+            background-color: #E0FFFF; /* Light cyan for a softer background */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        h1 {
+        header {
+            background: #00BFFF; /* Deep Sky Blue */
+            color: #fff;
             text-align: center;
-            border-bottom: 2px solid #000;
+            padding: 20px;
+            border-bottom: 5px solid #1E90FF; /* Dodger Blue */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header h2 {
+            margin: 0;
+            font-size: 1.5em;
+            font-weight: normal;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h3 {
+            color: #1E90FF; /* Dodger Blue */
+            border-bottom: 2px solid #1E90FF;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
         }
         figure {
             text-align: center;
+            margin: 20px 0;
         }
         img {
             max-width: 100%;
             height: auto;
+            border-radius: 8px;
         }
         ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 10px;
         }
         p {
             margin: 0;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #00BFFF;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>Abraão Santos Barros</h1>
-    <h2>Bem-vindo, conheça um pouco sobre a minha história.</h2>
-    
+    <header>
+        <h1>Abraão Santos Barros</h1>
+        <h2>Bem-vindo, conheça um pouco sobre a mim.</h2>
+    </header>
+
     <section>
         <h3>Descrição:</h3>
         <ul>
@@ -67,8 +122,8 @@
     <section>
         <h3>Hobbies:</h3>
         <ul>
-            <li>Treinar calistenia, eu treino há aproximadamente 5 meses.</li>
-            <li>Jogar videogame, estou treinando para ganhar do meu irmão mais velho no FIFA 2019.</li>
+            <li>Treinar calistenia; eu treino há aproximadamente 5 meses.</li>
+            <li>Jogar videogame; estou treinando para ganhar do meu irmão mais velho no FIFA 2019.</li>
             <li>Desenhar no tédio; por mais que seja no tédio, no final sempre ficam ótimas artes.</li>
         </ul>
     </section>
@@ -86,7 +141,7 @@
     <section>
         <h3>Profissões que desejo trabalhar no meu futuro:</h3>
         <ul>
-            <li>Militar do exército; meu pai e meu avô tentaram mas não conseguiram, mas eu tenho o sonho de conseguir servir.</li>
+            <li>Militar do exército; meu pai e meu avô tentaram, mas não conseguiram. Eu tenho o sonho de conseguir servir.</li>
             <li>Professor de Muay Thai; é a arte marcial que eu mais gostei, por isso quero ser um bom professor de Muay Thai para meus futuros alunos.</li>
         </ul>
     </section>
@@ -96,6 +151,9 @@
         <figcaption>Exército</figcaption>
     </figure>
 
-    <!-- Add links here if needed -->
+    <footer>
+        <p>© 2024 Abraão Santos Barros..</p>
+        <p><a href="vitoria.html">Vitória</a> | <a href="matheusn.html">Matheus</a> | <a href="luana.html">Luana</a></p>
+    </footer>
 </body>
 </html>
