@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Memorial de Matheus Gabriel dos Santos Neumann, incluindo hobbies, desejos e momentos especiais.">
     <title>Matheus Neumann</title>
     <style>
         body {
@@ -29,51 +30,24 @@
         h2, h3 {
             color: #333;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+        /* Flexbox layout for images */
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Space between images */
+            justify-content: center; /* Center images horizontally */
         }
-        li {
-            margin-bottom: 10px;
-        }
-        figure {
+        .image-gallery figure {
             margin: 0;
             padding: 0;
-            text-align: center;
+            width: 100%; /* Ensure images fit within their container */
+            max-width: 350px; /* Control image size */
         }
-        figcaption {
-            font-style: italic;
-            margin-top: 5px;
-        }
-        img {
+        .image-gallery img {
             max-width: 100%;
             height: auto;
-            border-radius: 8px;
+            border: 2px solid #ddd; /* Optional: adds a border around images */
         }
-        .content {
-            margin: 20px 0;
-        }
-        a {
-            text-decoration: none;
-            color: #007BFF;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsividade */
-        @media (max-width: 768px) {
-            header, footer {
-                padding: 15px;
-            }
-            .container {
-                padding: 10px;
-            }
-            img {
-                max-width: 90%;
-            }
-        }
-
         @media (max-width: 480px) {
             h1 {
                 font-size: 1.5em;
@@ -83,6 +57,9 @@
             }
             h3 {
                 font-size: 1em;
+            }
+            .image-gallery {
+                flex-direction: column; /* Stack images vertically on small screens */
             }
         }
     </style>
@@ -94,9 +71,8 @@
 
     <div class="container">
         <main class="content">
-            <section>
+            <section id="description">
                 <h2>Bem-vindo ao meu memorial</h2>
-                
                 <h3>Descrição:</h3>
                 <ul>
                     <li>Nome: Matheus Gabriel dos Santos Neumann.</li>
@@ -106,8 +82,8 @@
                     <li>Sou natural de Timbó / SC, mas moro em Rio dos Cedros com minha mãe, meu padrasto e minha irmã.</li>
                 </ul>
             </section>
-            
-            <section>
+           
+            <section id="hobbies">
                 <h3>Hobbies:</h3>
                 <ul>
                     <li>Eu treino futsal.</li>
@@ -117,57 +93,78 @@
                     <li>Profissão que desejo seguir no futuro: Professor de Informática.</li>
                     <li>Meu time é o Santos e sim, eu gosto de sofrer! Kkk.</li>
                 </ul>
-                <figure>
-                    <img src="img/matheusn.santos.webp" alt="Matheus Neumann" height="200">
-                    <figcaption>Matheus Neumann</figcaption>
-                </figure>
+                <div class="image-gallery">
+                    <figure>
+                        <img src="img/matheusn...pele.webp" alt="Neymar" height="320" width="400">
+                        <figcaption>pele</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/matheusn...neymar.jpg" alt="Pelé" height="320" width="400">
+                        <figcaption>Neymar</figcaption>
+                    </figure>
+                </div>
             </section>
-
-            <section>
+			
+            <section id="cars">
                 <h3>Carros que desejo ter no futuro:</h3>
-                <figure>
-                    <img src="img/matheusn.MY23Challenger_.avif" alt="Dodge Challenger 2023" height="400">
-                    <figcaption>Dodge Challenger 2023</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/matheusndodge_ram.webp" alt="Dodge Ram 2500" height="400">
-                    <figcaption>Dodge Ram 2500</figcaption>
-                </figure>
+                <div class="image-gallery">
+                    <figure>
+                        <img src="img/matheusn.MY23Challenger_.AVIF" alt="Casa do Papai Noel" height="320" width="400">
+                        <figcaption>Casa do Papai Noel</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/matheusndodge _ram.webp" alt="Dodge Challenger" height="320" width="400">
+                        <figcaption>Dodge Challenger</figcaption>
+                    </figure>
+                </div>
             </section>
 
-            <section>
+            <section id="moments">
                 <h3>Momentos:</h3>
-                <figure>
-                    <img src="img/matheusn_Eu.jpg" alt="Eu" height="400">
-                    <figcaption>E esse sou eu :)</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/matheusn.MAESTROS FC_jpg" alt="Meu time" height="500">
-                    <figcaption>Meu time</figcaption>
-                </figure>
+                    <figure>
+                        <img src="img/matheusn_Eu.jpg" alt="Matheus Neumann" height="400" width="400">
+                        <figcaption>E esse sou eu :)</figcaption>
+                    </figure>
+
             </section>
 
-            <section>
+            <section id="places">
                 <h3>Lugares que desejo visitar:</h3>
                 <ul>
                     <li>Finlândia</li>
                     <li>França</li>
+					<li>canadá</li>
                 </ul>
-                <figure>
-                    <img src="img/matheusCasa_noell-min.jpg" alt="Casa do Papai Noel" height="300">
-                    <figcaption>Casa do Papai Noel</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/matheusn.torre-eiffel.webp" alt="Torre Eiffel" height="300">
-                    <figcaption>Torre Eiffel</figcaption>
-                </figure>
+                <div class="image-gallery">
+                    <figure>
+                        <img src="img/matheusCasa_noell-min.jpg" alt="Casa do Papai Noel" height="320" width="400">
+                        <figcaption>Casa do Papai Noel</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/matheusn.torre-eiffel.webp" alt="Torre Eiffel" height="320" width="400">
+                        <figcaption>Torre Eiffel</figcaption>
+                    </figure>
+                </div>
+				<div class="image-gallery">
+                    <figure>
+                        <img src="img/Matheusn.museu.webp" alt="Casa do Papai Noel" height="320" width="400">
+                        <figcaption>Museu do Louvre</figcaption>
+                    </figure>
+					<div class="image-gallery">
+                    <figure>
+                        <img src="img/matheusn.lago-moraine-canada.webp" alt="Casa do Papai Noel" height="320" width="400">
+                        <figcaption>Lago more</figcaption>
+                    </figure>
             </section>
         </main>
 
         <footer>
-            <p><a href="vitoria.html">Vitória</a> | <a href="abraaos.html">Abraão</a> | <a href="luana.html">Luana</a></p>
+            <p>
+                <a href="vitoria.html" aria-label="Página sobre Vitória">vitoria</a> |
+                <a href="abraaos.html" aria-label="Página sobre Abraão">Abraão</a> |
+                <a href="luana.html" aria-label="Página sobre Luana">Luana</a>
+            </p>
         </footer>
     </div>
 </body>
 </html>
-
